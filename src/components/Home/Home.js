@@ -1,4 +1,4 @@
-import Carousel from '../Carousel'
+import Carousel from '../Global/Carousel'
 import CreateBlogBox from './createBlogBox'
 import React from 'react'
 import './Home.css'

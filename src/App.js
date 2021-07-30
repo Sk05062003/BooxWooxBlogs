@@ -1,5 +1,5 @@
 // import logo from './logo.svg'
-import Navbar from './components/nav'
+import Navbar from './components/Global/nav'
 import './App.css'
 import Home from './components/Home/Home'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
