@@ -1,0 +1,11 @@
+.home {
+  position: absolute;
+  top: 0;
+  padding: 10rem 0 20rem;
+  width: 100%;
+  position: relative;
+}
+
+.home__main {
+  position: absolute;
+}

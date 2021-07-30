@@ -1,0 +1,42 @@
+.carousel__wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.carousel__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__item {
+  font-size: 5rem;
+  position: absolute;
+  opacity: 0;
+}
+
+.carousel__item__active {
+  opacity: 1;
+}
+
+.carousel__buttons {
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.carousel__button {
+  cursor: pointer;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.carousel__button__active {
+  background-color: #000;
+}
