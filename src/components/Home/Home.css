@@ -1,9 +1,6 @@
 .home {
-  position: absolute;
-  top: 0;
-  padding: 10rem 0 20rem;
-  width: 100%;
-  position: relative;
+  margin-top: -73px;
+  height: 100vh;
 }
 
 .home__main {

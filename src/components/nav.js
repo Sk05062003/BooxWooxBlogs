@@ -22,7 +22,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='logo' onClick={closeSideMenu}>
           <Link to='/'>
-            <img src={logo} />
+            <img src={logo} alt='logo' />
           </Link>
         </div>
 
