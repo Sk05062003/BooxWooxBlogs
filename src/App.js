@@ -1,17 +1,16 @@
-// import './App.css';
-// import '@icon/icofont/icofont.css'
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'aos/dist/aos.css';
-// import 'owl.carousel/dist/assets/owl.carousel.min.css';
-// import 'line-awesome/dist/line-awesome/css/line-awesome.min.css'
-// import './style.css'
-import AOS from 'aos';
-import 'font-awesome/css/font-awesome.css'
-import BlogPage from "./components/blog-page";
-AOS.init();
+import logo from './logo.svg';
+import Navbar from './components/nav';
+import './App.css';
+import CreateBlogBox from './components/createBlogBox';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 function App() {
   return (
-    <BlogPage />
+    <Router>
+      <Navbar />
+      <CreateBlogBox id = "box"/>
+      <div id = "sen">Organising Yourself</div>
+    </Router>
   );
 }
 

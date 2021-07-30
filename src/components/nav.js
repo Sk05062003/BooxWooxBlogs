@@ -1,52 +1,74 @@
-import React from "react";
+import React, {useState} from 'react'
+import './nav.css'
+import logo from '../bwlogo.svg'
+import { Link } from 'react-router-dom';
 
-export default function Nav () {
+function Navbar() {
+    const[click, setClick] = useState(false);
 
-    return ( <div style={{height:100+'px'}}> 
+    const iconChange = () => setClick(prevClick => !prevClick);
+    const closeSideMenu = () => setClick(false);
 
-<div className="site-mobile-menu site-navbar-target">
-    <div className="site-mobile-menu-header">
-        <div className="site-mobile-menu-close mt-3">
-            <span className="icofont-close js-menu-toggle"></span>
-        </div>
-    </div>
-    <div className="site-mobile-menu-body"></div>
-</div>
-<div id="sticky-wrapper" className="sticky-wrapper" style={{height:90+'px'}}>
-<header className="site-navbar js-sticky-header site-navbar-target" role="banner">
+    const checkSideMenuSize = () => {
+        if(window.innerWidth >= 800) {
+            closeSideMenu();
+        }
+    }
+    
+    window.addEventListener('resize', checkSideMenuSize);
 
-    <div className="container">
-        <div className="row align-items-center">
-            <div className="col-6 col-lg-2">
-                <a href='index.html'><img src="/assets/img/White.png" className="logo" alt='logo'/></a>
+    return (
+        <>
+            <nav className = "navbar">
+                <div className = "logo" onClick = {closeSideMenu}>
+                    <Link to = "/"><img src = {logo} /></Link>
+                </div>
+
+                <div className = "menu-bar-icon" onClick = {iconChange}>
+                    <i className = {click ? "fa fa-times" : "fa fa-bars"} />
+                </div>
+
+                <div className = "nav-row">
+                    <Link to = "/features" className = "nav-link" id = "feat">
+                        Features
+                    </Link>
+                    <Link to = "/blogs" className = "nav-link" id = "blog">
+                        Blogs
+                    </Link>
+                    <Link to = "/downloads" className = "nav-link" id = "down">
+                        Downloads
+                    </Link>
+                    <Link to = "/login" className = "nav-link" id = "log-text">
+                        Login
+                    </Link>
+                </div>
+            </nav>
+            <div id = "side-menu-container">
+            <ul className = {click ? "side-menu-active" : "side-menu"}>
+                <li className = "side-menu-item">
+                    <Link to = "/features" className = "nav-link-side" onClick = {closeSideMenu}>
+                        Features
+                    </Link>
+                </li>
+                <li className = "side-menu-item">
+                    <Link to = "/blogs" className = "nav-link-side" id = "blog-side" onClick = {closeSideMenu}>
+                        Blogs
+                    </Link>
+                </li>
+                <li className = "side-menu-item">
+                    <Link to = "/downloads" className = "nav-link-side" onClick = {closeSideMenu}>
+                        Downloads
+                    </Link>
+                </li>
+                <li className = "side-menu-item">
+                    <Link to = "/login" className = "nav-link-side" id = "log-side" onClick = {closeSideMenu}>
+                        Login
+                    </Link>
+                </li>
+            </ul>
             </div>
-
-            <div className="col-12 col-md-10 d-none d-lg-block">
-                <nav className="site-navigation position-relative text-right" role="navigation">
-
-                    <ul className="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                        <li><a href="#hero" className="nav-link scroll">Home</a></li>
-                        <li><a href="#AboutUS" className="nav-link scroll">About Us</a></li>
-                        <li><a href="#Features" className="nav-link scroll">Features</a></li>
-                        <li className="active"><a href="blog.html" className="nav-link">Blog</a></li> 
-                        <li><a href="#Contact" className="nav-link scroll">Contact</a></li>
-                        <li><a href="#Download" className="nav-link scroll">Downloads</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div className="col-6 d-inline-block d-lg-none ml-md-0 py-3" style={{position:'relative', top:3+'px'}}>
-
-                <a href="#" className="burger site-menu-toggle js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
-                    <span></span>
-                </a>
-            </div>
-
-        </div>
-    </div>
-</header>
-
-</div>
-        </div>
+        </>
     )
 }
+
+export default Navbar
