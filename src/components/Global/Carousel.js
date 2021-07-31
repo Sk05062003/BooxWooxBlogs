@@ -56,22 +56,20 @@ export default function Carousel(props) {
           )
         })}
       </div>
-      <div className='carousel__buttons__wrapper'>
-        <div className='carousel__buttons'>
-          {props.children.map((_, index) => {
-            return (
-              <div
-                className={`carousel__button circular_btn ${
-                  itemIndex === index ? 'carousel__button__active' : ''
-                }`}
-                onClick={() => {
-                  handleItemChange(index)
-                }}
-                key={index}
-              ></div>
-            )
-          })}
-        </div>
+      <div className='carousel__buttons'>
+        {props.children.map((_, index) => {
+          return (
+            <div
+              className={`carousel__button circular_btn ${
+                itemIndex === index ? 'carousel__button__active' : ''
+              }`}
+              onClick={() => {
+                handleItemChange(index)
+              }}
+              key={index}
+            ></div>
+          )
+        })}
       </div>
     </div>
   )

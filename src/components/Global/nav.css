@@ -9,13 +9,13 @@
 .navbar {
   position: sticky;
   display: flex;
-  height: 73px;
+  height: 4.5rem;
   width: 100%;
   flex-direction: row;
   background-color: #fff;
   opacity: 80%;
   align-items: center;
-  z-index: 999;
+  z-index: 11;
 }
 
 .nav-row {
@@ -47,7 +47,7 @@
 
 .side-menu-container {
   text-align: center;
-  z-index: 10;
+  z-index: 11;
   height: 180px;
 }
 

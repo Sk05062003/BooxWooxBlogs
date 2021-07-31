@@ -1,8 +1,48 @@
 .home {
-  margin-top: -73px;
-  height: 100vh;
+  margin-top: -4.5rem;
+  /* height: 100vh; */
 }
 
-.home__main {
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero__above_layer {
   position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.hero__above_layer__text {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 20.25rem 0 6.25rem;
+}
+
+#sen {
+  font-family: Poppins;
+  font-style: bold;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  line-height: 100%;
+  padding-bottom: 8.75rem;
+  align-self: flex-end;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .hero__above_layer__text {
+    justify-content: center;
+    padding: 0 1.5rem;
+  }
+  #sen {
+    padding-bottom: 3rem;
+    font-size: 24px;
+  }
 }
