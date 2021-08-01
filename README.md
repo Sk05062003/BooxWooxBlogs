@@ -7,6 +7,7 @@
     - 'Create a blog' box added
     - Nescessary CSS included
     - "screen-snippets" added
+    - Carousel added
 
 - 28, July 2021
     - React Project Initialised

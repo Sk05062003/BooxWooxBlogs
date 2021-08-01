@@ -1,17 +1,18 @@
-import logo from './logo.svg';
-import Navbar from './components/nav';
-import './App.css';
-import CreateBlogBox from './components/createBlogBox';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import logo from './logo.svg'
+import Navbar from './components/Global/nav'
+import './App.css'
+import Home from './components/Home/Home'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <CreateBlogBox id = "box"/>
-      <div id = "sen">Organising Yourself</div>
+      <Switch>
+        <Route path='/' exact component={Home} />
+      </Switch>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
