@@ -46,6 +46,11 @@
     transition: 0.5s;
 }
 
+.icon:active {
+    transform: translateY(4px);
+    transition: 0.5s;
+}
+
 .icon-inactive {
     display: none;
 }
