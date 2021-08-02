@@ -2,8 +2,7 @@
 
 ## Issues
 1. 'Bookmark' icon z-index positioning not working as expected
-2. 'Sort-by' dropdown menu z-index positioning not working as expected
-3. 'Sort-by' dropdown menu auto-close functionality (on clicking outside the menu) hasn't been included
+2. 'Sort-by' dropdown menu auto-close functionality (on clicking outside the menu) hasn't been included
 
 ## Updates
 - 2 August, 2021

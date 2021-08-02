@@ -159,14 +159,14 @@ function BlogsPage() {
                     <Blogs />    
                 </div>
                 <div id = "side">
-                <div id="drop-title"><div id="drop-down" onClick={() => console.log("Hello!"), showMenu}>Sort by {sortAttribute} <i id="down-arrow" className={dropdownMenu ? "fa fa-chevron-up" : "fa fa-chevron-down"} /></div><i id="sort-direction" className={sortAscending ? "fa fa-sort-amount-asc" : "fa fa-sort-amount-desc"} onClick={() => setSortAscending(!sortAscending)}/></div>
+                <div id="drop-title"><div id="drop-down" onClick={() => {showMenu()}}>Sort by {sortAttribute} <i id="down-arrow" className={dropdownMenu ? "fa fa-chevron-up" : "fa fa-chevron-down"} /></div><i id="sort-direction" className={sortAscending ? "fa fa-sort-amount-asc" : "fa fa-sort-amount-desc"} onClick={() => setSortAscending(!sortAscending)}/></div>
 
                 <div id={dropdownMenu ? "sort-orders" : "sort-orders-inactive"}>
-                    <div id="sort-order" onClick={() => setSortAttribute("recommended")}>Sort by recommended</div>
-                    <div id="sort-order" onClick={() => setSortAttribute("popularity")}>Sort by popularity</div>
-                    <div id="sort-order" onClick={() => setSortAttribute("rating")}>Sort by rating</div>
-                    <div id="sort-order" onClick={() => setSortAttribute("date posted")}>Sort by date posted</div>
-                    <div id="sort-order" onClick={() => setSortAttribute("duration")}>Sort by duration</div>
+                    <div id="sort-order" onClick={() => {setSortAttribute("recommended"); showMenu()}}>Sort by recommended</div>
+                    <div id="sort-order" onClick={() => {setSortAttribute("popularity"); showMenu()}}>Sort by popularity</div>
+                    <div id="sort-order" onClick={() => {setSortAttribute("rating"); showMenu()}}>Sort by rating</div>
+                    <div id="sort-order" onClick={() => {setSortAttribute("date posted"); showMenu()}}>Sort by date posted</div>
+                    <div id="sort-order" onClick={() => {setSortAttribute("duration"); showMenu()}}>Sort by duration</div>
                 </div>
 
                 <div id="side-menu">
