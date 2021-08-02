@@ -277,6 +277,11 @@
     color: #000000;
 }
 
+#bmi {
+    position: absolute;
+    z-index: 13;
+}
+
 #drop-down {
     position: relative;
     z-index: 3;

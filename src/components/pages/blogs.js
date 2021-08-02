@@ -89,7 +89,7 @@ function Blog(blog) {
     return (
         <div className="blog-box">
             
-            <img src={icon} alt="bookmark-icon" className={blog.bookmarked ? "icon" : "icon-inactive"} />
+            <div id="bmi"><img src={icon} alt="bookmark-icon" className={blog.bookmarked ? "icon" : "icon-inactive"} /></div>
             <div className="heading">
                 <img src={authorPic} className="author-pic" />
                 <div className="info">

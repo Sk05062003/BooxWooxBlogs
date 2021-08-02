@@ -9,7 +9,6 @@ function App() {
   return (
     <Router>
       <Navbar />
-      {/* <BlogsPage /> */}
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/blogs' component={BlogsPage} />
