@@ -1,0 +1,389 @@
+:root {
+    background-color: #E5E5E5;
+}
+
+#arrow {
+    font-weight: 50;
+    margin-right: 20px;
+    color: #000000;
+}
+
+#arrow:hover {
+    position: relative;
+    color: #FFBD06;
+    z-index: 100;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.blog-box {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    /* height: 587px; */
+    height: fit-content;
+    width: 922px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.blog-box:hover{
+    transform: scale(1.01);
+}
+
+.icon {
+    height: 51.43px;
+    width: 30px;
+    position: relative;
+    left: 840px;
+    top: 0px;
+    z-index: 11;
+}
+
+.icon:hover {
+    transform: translateY(-15px);
+    transition: 0.5s;
+}
+
+.icon:active {
+    transform: translateY(4px);
+    transition: 0.5s;
+}
+
+.icon-inactive {
+    display: none;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+    top: 0;
+}
+
+#username {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    cursor: pointer;
+}
+
+#username:hover {
+    color: #FFBD06;
+    transition: 0.5s;
+}
+
+#date {
+    margin-top: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #828282;
+}
+
+#likes-icon {
+    color: #FF0000;
+    margin-left: 50px;
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+#likes-icon:hover {
+    color: rgb(184, 6, 6);
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+#likes-icon:active {
+    transform: translateY(4px);
+    transition: 0.2s;
+}
+
+#likes {
+    position: relative;
+    z-index: 1;
+    margin-left: 15px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 550px;
+    top: 0;
+}
+
+.author-pic {
+    border-radius: 30px;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.author-pic:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.author-pic:active {
+    transform: translateY(4px);
+    transition: 0.2s;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    width: 782px;
+}
+
+.content {
+    margin-top: 25px;
+}
+
+.content h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.content p {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    color: #939393;
+    justify-content: center;
+}
+
+.image {
+    height: 292px;
+    width: 782px;
+    border-radius: 8px;
+}
+
+.footing {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.footing a{
+    margin-right: 60px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.footing a:hover {
+    transform: translateY(-4px);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+#whole {
+    display: flex;
+    flex-direction: row;
+}
+
+#core {
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+#side {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+
+    /* identical to box height */
+
+    color: #000000;
+}
+
+#side ol {
+    margin-left: 100px;
+
+}
+
+#load {
+    margin-left: 550px;
+    margin-top: 1000px;
+    border: 3px solid #FFBD06;
+    box-sizing: border-box;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28px;
+    color: #000000;
+    cursor: pointer;
+}
+
+#load:hover {
+    background-color: #FFBD06;
+    color: #ffffff;
+    border: 3px solid #000000;
+    transition: 0.5s;
+}
+
+#load:active {
+    transform: translateY(4px);
+    transition: 0.5s;
+}
+
+#load-up {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#nav {
+    margin-bottom: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+#bmi {
+    position: absolute;
+    z-index: 13;
+}
+
+#drop-down {
+    position: relative;
+    z-index: 3;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: fit-content;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+
+#down-arrow {
+    position: relative;
+    left: 8px;
+    scale: 0.7;
+}
+
+#side-menu {
+    position: relative;
+    z-index: 1;
+    margin-left: 90px;
+    margin-top: 70px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #000000;
+}
+
+#side-menu li {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 48px;
+    color: #000000;
+}
+
+#side-menu li:hover {
+    color: #FFBD06;
+    transition: 0.5s;
+}
+
+#link {
+    text-decoration: none;
+}
+
+
+
+#sort-orders {
+    position: absolute;
+    z-index: 100;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: fit-content;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    text-justify: center;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+#sort-orders-inactive {
+    display: none;
+}
+
+#sort-order {
+    cursor: pointer;
+    text-justify: center;
+    line-height: 30px;
+}
+
+#sort-order:hover {
+    color: #FFBD06;
+    transition: 0.5s;
+}
+
+#sort-direction {
+    scale: 0.7;
+    position: absolute;
+    left: 1280px;
+    top: 120px;
+    cursor: pointer;
+    float: right;
+    margin-right: 15px;
+}

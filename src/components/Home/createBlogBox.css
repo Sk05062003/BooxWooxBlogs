@@ -52,9 +52,13 @@
   color: #000000;
 }
 
-#line-3:hover {
+#link:hover {
   color: seashell;
   transition: 0.5s;
+}
+
+#line-3:active {
+  transform: translateY(4px);
 }
 
 @media screen and (max-width: 800px) {
