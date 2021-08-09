@@ -236,7 +236,7 @@
 }
 
 #load {
-    margin-left: 65%;
+    position: relative;
     margin-top: 1000px;
     border: 3px solid #FFBD06;
     box-sizing: border-box;
@@ -266,6 +266,10 @@
 }
 
 #load-up {
+    top: 0;
+    position: relative;
+    z-index: 5;
+    margin-left: 30%;
     margin-top: 60px;
     margin-bottom: 40px;
     white-space: nowrap;
@@ -313,9 +317,9 @@
 }
 
 #side-menu {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    margin-left: 30%;
+    margin-left: 3%;
     margin-top: 70px;
     font-family: Poppins;
     font-style: normal;
@@ -403,6 +407,7 @@
     background-color: #FFFFFF;
     width: 100%;
     z-index: 30;
+    white-space: nowrap;
 }
 
 
@@ -423,7 +428,6 @@
 #access-drop-down {
     position: relative;
     z-index: 3;
-    margin-left: 20px;
     width: fit-content;
     font-family: Roboto;
     font-style: normal;
@@ -439,42 +443,9 @@
     scale: 0.7;
 }
 
-#access-side-menu {
-    position: relative;
-    z-index: 1;
-    margin-left: 30%;
-    margin-top: 70px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2vi;
-    line-height: 10vi;
-    color: #000000;
-}
-
-#access-side-menu li {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.8vb;
-    line-height: 7vb;
-    color: #000000;
-}
-
-#access-side-menu li:hover {
-    color: #FFBD06;
-    transition: 0.5s;
-}
-
-#access-link {
-    text-decoration: none;
-}
-
-
-
-#access-sort-orders {
-    position: relative;
-    top: 100px;
+.access-items {
+    position: absolute;
+    right: 3px;
     z-index: 100;
     margin-left: 20px;
     margin-top: 20px;
@@ -482,24 +453,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
     height: fit-content;
     font-family: Roboto;
     font-style: normal;
     font-weight: 100;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 15px;
     color: #000000;
     text-justify: center;
     border-radius: 10px;
     background-color: #FFFFFF;
 }
 
-#access-sort-orders-inactive {
+.access-items-inactive {
     display: none;
 }
 
-#access-sort-order {
+#order{
+    right: 23px;
+}
+
+#category{
+    right: 212px;
+}
+
+#access-item {
     cursor: pointer;
     text-justify: center;
     line-height: 30px;
@@ -507,7 +489,7 @@
     color: #000000;
 }
 
-#access-sort-order:hover {
+#access-item:hover {
     color: #FFBD06;
     transition: 0.5s;
 }
@@ -516,11 +498,21 @@
     scale: 0.7;
     position: relative;
     cursor: pointer;
-    float: right;
+    right: -30;
 }
 
 #access-drop-title{
     border: 2px solid #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1%;
+    padding: 4px;
+}
+
+#access-drop-title:hover{
+    background-color: #FFBD06;
+    transition: 0.5s;
 }
 
 
@@ -557,9 +549,11 @@
     }
     #likes-icon {
         font-size: 24px;
+        right: 10%;
     }
     #likes {
         font-size: 13px;
+        right: 10%;
     }
     .icon{
         position: relative;

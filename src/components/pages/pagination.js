@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import Loader from 'react-loader-spinner';
 import './blogs.css'
+import { hexToRgb } from '@material-ui/core';
 import icon from '../images/bookmark.svg'
 import pic from '../images/img-1.jpg'
 
@@ -45,7 +46,7 @@ let arrayForHoldingPosts = [];
 const Blogs = ( {blogs, loading} ) => {
     if(loading) {
         return(
-            <Loader id="load-ani" type="Rings" color="rgb(155,236,34)" height={70} width={70} timeout={5000} />
+            <Loader id="load-ani" type="Rings" color="#FFBD06" height={70} width={70} timeout={5000} />
         );
     }
     
@@ -73,15 +74,13 @@ const Blogs = ( {blogs, loading} ) => {
 }
 
 function Pagination() {
-    const totalObjects = 0;
-
     const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchBlogs = async () => {
             setLoading(true);
-            const resp = axios.get("https://jsonplaceholder.typicode.com/posts");
+            const resp = await axios.get("https://jsonplaceholder.typicode.com/posts");
             setBlogs(resp.data);
             setLoading(false);
         }
@@ -89,7 +88,7 @@ function Pagination() {
         fetchBlogs();
     }, [])
 
-    const [postsToShow, setPostsToShow] = useState([]);
+    const [postsToShow, setPostsToShow] = useState([{title:"Lorem ipsum dolor sit amet", body:"He is a very good boy"}]);
     const [next, setNext] = useState(0);
 
     const loopWithSlice = (start, end) => {
@@ -113,7 +112,7 @@ function Pagination() {
     return (
         <div>
             <Blogs blogs={postsToShow} loading={loading} />
-            <div id = {(next >= totalObjects || loading) ? "load-inactive" : "load-up"} onClick={handleShowMorePosts}><a id="load">Load more</a></div>
+            <div id = {(next >= 100 || loading) ? "load-inactive" : "load-up"} onClick={handleShowMorePosts}><a id="load">Load more</a></div>
         </div>
     )
 }

@@ -158,27 +158,29 @@ function BlogsPage() {
     return (
         <div>
         <div id="access-bar">
-        <div id="acess-drop-title"><div id="access-drop-down" onClick={() => {showCategoryMenu()}}>Category<i id="access-down-arrow" className={dropdownMenu ? "fa fa-chevron-up" : "fa fa-chevron-down"} /></div></div>
-
-        <div id={categoryMenu ? "access-sort-orders" : "access-sort-orders-inactive"}>
-            <Link to="/" id="access-sort-order">Adventure</Link>
-            <Link to="/" id="access-sort-order">Horror</Link>
-            <Link to="/" id="access-sort-order">Filmy</Link>
-            <Link to="/" id="access-sort-order">Politics</Link>
-            <Link to="/" id="access-sort-order">Bollywood</Link>
-            <Link to="/" id="access-sort-order">Hollywood</Link>
+            <div id="access-drop-title"><div id="access-drop-down" onClick={() => {showCategoryMenu(); setDropdownMenu(false)}}>Category<i id="access-down-arrow" className={categoryMenu ? "fa fa-chevron-up" : "fa fa-chevron-down"} /></div></div>
+            
+            <div id="access-drop-title">
+                <div id="access-drop-down" onClick={() => {showDropdownMenu(); setCategoryMenu(false)}}>Sort by {sortAttribute} <i id="access-down-arrow" className={dropdownMenu ? "fa fa-chevron-up" : "fa fa-chevron-down"} /></div>
+                <div><i id="access-sort-direction" className={sortAscending ? "fa fa-sort-amount-asc" : "fa fa-sort-amount-desc"} onClick={() => setSortAscending(!sortAscending)}/></div>
+            </div>
         </div>
 
-
-        <div id="acess-drop-title"><div id="access-drop-down" onClick={() => {showDropdownMenu()}}>Sort by {sortAttribute} <i id="access-down-arrow" className={dropdownMenu ? "fa fa-chevron-up" : "fa fa-chevron-down"} /></div><i id="access-sort-direction" className={sortAscending ? "fa fa-sort-amount-asc" : "fa fa-sort-amount-desc"} onClick={() => setSortAscending(!sortAscending)}/></div>
-
-        <div id={dropdownMenu ? "access-sort-orders" : "access-sort-orders-inactive"}>
-            <div id="access-sort-order" onClick={() => {setSortAttribute("recommended"); showDropdownMenu()}}>Sort by recommended</div>
-            <div id="access-sort-order" onClick={() => {setSortAttribute("popularity"); showDropdownMenu()}}>Sort by popularity</div>
-            <div id="access-sort-order" onClick={() => {setSortAttribute("rating"); showDropdownMenu()}}>Sort by rating</div>
-            <div id="access-sort-order" onClick={() => {setSortAttribute("date posted"); showDropdownMenu()}}>Sort by date posted</div>
-            <div id="access-sort-order" onClick={() => {setSortAttribute("duration"); showDropdownMenu()}}>Sort by duration</div>
+        <div className={categoryMenu ? "access-items" : "access-items-inactive"} id="category">
+            <Link to="/" id="access-item">Adventure</Link>
+            <Link to="/" id="access-item">Horror</Link>
+            <Link to="/" id="access-item">Filmy</Link>
+            <Link to="/" id="access-item">Politics</Link>
+            <Link to="/" id="access-item">Bollywood</Link>
+            <Link to="/" id="access-item">Hollywood</Link>
         </div>
+
+        <div className={dropdownMenu ? "access-items" : "access-items-inactive"} id="order">
+            <div id="access-item" onClick={() => {setSortAttribute("recommended"); showDropdownMenu()}}>Sort by recommended</div>
+            <div id="access-item" onClick={() => {setSortAttribute("popularity"); showDropdownMenu()}}>Sort by popularity</div>
+            <div id="access-item" onClick={() => {setSortAttribute("rating"); showDropdownMenu()}}>Sort by rating</div>
+            <div id="access-item" onClick={() => {setSortAttribute("date posted"); showDropdownMenu()}}>Sort by date posted</div>
+            <div id="access-item" onClick={() => {setSortAttribute("duration"); showDropdownMenu()}}>Sort by duration</div>
         </div>
 
             <div id = "whole">
