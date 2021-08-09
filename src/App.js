@@ -1,7 +1,7 @@
 // import logo from './logo.svg'
 import Navbar from './components/Global/nav'
 import './App.css'
-import Home from './components/Home/Home'
+import Home from './components/Home/index'
 import BlogsPage from './components/pages/blogs'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
