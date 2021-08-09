@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Carousel from '../../../components/Carousel'
+import Carousel from '../../../components/Global/Carousel'
 import CreateBlogBox from './createBlogBox'
 import { data as CarouselContent } from './CarouselContent'
-import { ReactComponent as ChevronDown } from '../../../../assets/chevron.svg'
+import { ReactComponent as ChevronDown } from '../../../assets/chevron-down.svg'
 import './section1.css'
 
 export default function Section1() {
