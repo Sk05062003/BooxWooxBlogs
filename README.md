@@ -3,6 +3,7 @@
 ## Issues
 1. 'Sort-by' dropdown menu auto-close functionality (on clicking outside the menu) hasn't been included
 2. Blogs are not rendered first-up
+3. 'Load more' button displaces unusually when screen size is reduced
 
 ## Updates
 - 9 August, 2021
