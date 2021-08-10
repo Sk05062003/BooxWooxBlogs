@@ -1,12 +1,12 @@
 # BooxWoox Blogs
 
 ## Issues
-1. Blogs are not rendered first-up
 
 ## Updates
 - 10 August, 2021
     - Issues resolved
     - Miscellaneous enhancements
+
 - 9 August, 2021
     - Pagination Implemented
     - Website made responsive
