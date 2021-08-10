@@ -32,6 +32,11 @@
   font-size: 1.5rem;
 }
 
+.footer__upper__text__social > a:hover {
+  opacity: 0.5;
+  transition: all ease 0.25s;
+}
+
 .footer__upper__links {
   flex: 1;
   display: flex;
@@ -50,10 +55,18 @@
   margin-bottom: 2rem;
 }
 
+.footer__upper__quick-nav > ul > li {
+  margin-bottom: 0.5rem;
+}
+
 .footer__upper__quick-nav > ul > li > a {
   color: #767676;
   font-size: 1.25rem;
-  margin-bottom: 0.375rem;
+}
+
+.footer__upper__quick-nav > ul > li > a:hover {
+  color: #999999;
+  transition: color ease 0.25s;
 }
 
 .footer__upper__reach-us {
@@ -91,6 +104,11 @@
 
 .footer__upper__reach-us__links {
   color: #686868;
+}
+
+.footer__upper__reach-us__links:hover {
+  color: #999999;
+  transition: color ease 0.25s;
 }
 
 .footer__lower {

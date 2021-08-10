@@ -7,7 +7,6 @@ import './section1.css'
 
 export default function Section1() {
   const heroRef = useRef()
-  const [isAtTop, setIsAtTop] = useState(false)
 
   function scrollSection() {
     window.scrollTo({
@@ -17,29 +16,25 @@ export default function Section1() {
     })
     window.removeEventListener('scroll', scrollSection)
     window.addEventListener('scroll', filterNonIdealPosition)
-    setIsAtTop(false)
   }
 
   function filterNonIdealPosition() {
     if (window.pageYOffset <= 0) {
-      setIsAtTop(true)
+      window.addEventListener('scroll', scrollSection)
       window.removeEventListener('scroll', filterNonIdealPosition)
     }
   }
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-    setIsAtTop(window.pageYOffset <= 0)
     window.addEventListener('scroll', filterNonIdealPosition)
-    // eslint-disable-next-line
-  }, [])
+    filterNonIdealPosition()
 
-  useEffect(() => {
-    if (isAtTop) {
-      window.addEventListener('scroll', scrollSection)
+    return () => {
+      window.removeEventListener('scroll', filterNonIdealPosition)
+      window.removeEventListener('scroll', scrollSection)
     }
     // eslint-disable-next-line
-  }, [isAtTop])
+  }, [])
 
   return (
     <div className='hero' ref={heroRef}>
