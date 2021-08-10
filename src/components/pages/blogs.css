@@ -174,8 +174,10 @@
 }
 
 .image {
-    height: 20%;
-    width: 94%;
+    max-width: 795px;
+    max-height: 292px;
+    height: auto;
+    width: auto;
     border-radius: 8px;
 }
 
@@ -404,7 +406,7 @@
     position: sticky;
     top: 0;
     display: none;
-    background-color: #FFFFFF;
+    background-color: #FFBD06;
     width: 100%;
     z-index: 30;
     white-space: nowrap;
@@ -448,7 +450,7 @@
     right: 3px;
     z-index: 100;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -508,10 +510,11 @@
     align-items: center;
     margin: 1%;
     padding: 4px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
 }
 
 #access-drop-title:hover{
-    background-color: #FFBD06;
     transition: 0.5s;
 }
 
@@ -526,6 +529,9 @@
 
 
 @media screen and (max-width: 800px) {
+    .image{
+        max-width: 630px;
+    }
     #access-bar{
         display: flex;
         flex-direction: row;
@@ -544,7 +550,6 @@
         width: 95%;
     }
     #load{
-        position: absolute;
         justify-self: center;
     }
     #likes-icon {

@@ -1,11 +1,12 @@
 # BooxWoox Blogs
 
 ## Issues
-1. 'Sort-by' dropdown menu auto-close functionality (on clicking outside the menu) hasn't been included
-2. Blogs are not rendered first-up
-3. 'Load more' button displaces unusually when screen size is reduced
+1. Blogs are not rendered first-up
 
 ## Updates
+- 10 August, 2021
+    - Issues resolved
+    - Miscellaneous enhancements
 - 9 August, 2021
     - Pagination Implemented
     - Website made responsive
