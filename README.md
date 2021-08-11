@@ -4,6 +4,8 @@
 
 ## Updates
 - 10 August, 2021
+    - Home page enhanced
+    - Footer added
     - Issues resolved
     - Miscellaneous enhancements
 
