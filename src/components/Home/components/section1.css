@@ -1,8 +1,3 @@
-.home {
-  margin-top: -4.5rem;
-  /* height: 100vh; */
-}
-
 .hero {
   height: 100vh;
   position: relative;
@@ -22,6 +17,29 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 0 20.25rem 0 6.25rem;
+}
+
+.hero__above_layer__scroll {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chevron-down-first-child {
+  animation: goDown 0.75s alternate infinite;
+}
+
+@keyframes goDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0.25rem);
+  }
 }
 
 #sen {
