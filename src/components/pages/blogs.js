@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./blogs.css";
 import Pagination from "./pagination";
 
 function BlogsPage() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  }, [])
+
   const [sortAttribute, setSortAttribute] = useState("recommended");
   const [sortAscending, setSortAscending] = useState(true);
   const [dropdownMenu, setDropdownMenu] = useState(false);
@@ -244,7 +248,7 @@ function BlogsPage() {
           <div id="side-menu">
             <div>Category</div>
             <hr />
-            <ul>
+            <ul id="categories">
               <Link to="/" id="link">
                 <li>Adventure</li>
               </Link>

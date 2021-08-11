@@ -18,7 +18,7 @@ function Navbar() {
   window.addEventListener("resize", checkSideMenuSize);
 
   return (
-    <>
+    <div className="nav-container">
       <nav className="navbar">
         <div className="logo" onClick={closeSideMenu}>
           <Link to="/">
@@ -87,7 +87,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 

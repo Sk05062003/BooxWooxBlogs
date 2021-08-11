@@ -25,6 +25,13 @@
   border-radius: 22px;
   background-color: #ffffff;
   cursor: pointer;
+  animation-name: blog-box;
+  animation-duration: 3s;
+}
+
+@keyframes blog-box {
+    0% {opacity: 0%; margin-top: 100px;}
+    100% {opacity: 100%;}
 }
 
 .icon {
@@ -159,6 +166,7 @@
 }
 
 .content p {
+    margin-top: 10px;
   font-family: Roboto;
   font-style: italic;
   font-weight: normal;
@@ -183,6 +191,7 @@
 }
 
 .footing a {
+    margin-top: 16px;
   margin-right: 60px;
   text-decoration: none;
   font-family: Poppins;
@@ -216,13 +225,16 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
-  /* identical to box height */
-
   color: #000000;
 }
 
 #side ol {
   margin-left: 100px;
+}
+
+#categories{
+    margin-top: 20px;
+    margin-left: 50%;
 }
 
 #load {
@@ -256,9 +268,10 @@
 }
 
 #load-ani {
-  position: absolute;
   left: 50%;
-  height: 100px;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
 }
 
 #load-up {
@@ -341,6 +354,7 @@
 
 #link {
   text-decoration: none;
+  line-height: 40px;
 }
 
 #sort-orders {
@@ -485,15 +499,14 @@
   flex-direction: row;
   color: #000000;
   align-items: center;
-  margin: 1%;
-  padding: 4px;
+  margin-right: 8px;
+  padding: 6px;
   background-color: #ffffff;
   border-radius: 8px;
 }
 
 #access-drop-title:hover {
-  background-color: #ffbd06;
-  color: #ffffff;
+  transform: scale(1.05);
   transition: 0.5s;
 }
 

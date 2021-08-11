@@ -56,14 +56,15 @@ let arrayForHoldingBlogs = [];
 const Blogs = ({ blogs, loading }) => {
   if (loading) {
     return (
+      <div id="load-ani">
       <Loader
-        id="load-ani"
         type="Rings"
         color="#FFBD06"
-        height={70}
-        width={70}
+        height={100}
+        width={100}
         timeout={5000}
       />
+      </div>
     );
   }
 

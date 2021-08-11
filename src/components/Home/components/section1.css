@@ -52,6 +52,12 @@
   padding-bottom: 8.75rem;
   align-self: flex-end;
   color: #ffffff;
+  animation-name: sen;
+  animation-duration: 2s;
+}
+
+@keyframes sen {
+  0% {margin-right: -100px; opacity: 0%;}
 }
 
 @media screen and (max-width: 800px) {
