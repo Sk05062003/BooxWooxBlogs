@@ -246,7 +246,7 @@ function BlogsPage() {
           </div>
 
           <div id="side-menu">
-            <div>Category</div>
+            <div id="category-head">Category</div>
             <hr />
             <ul id="categories">
               <Link to="/" id="link">

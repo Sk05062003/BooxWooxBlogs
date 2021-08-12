@@ -17,7 +17,7 @@ function Blog(blog) {
         />
       </div>
       <div className="heading">
-        <img src={authorPic} className="author-pic" />
+        <img src={authorPic} alt="author-pic" className="author-pic" />
         <div className="info">
           <d id="username">{blog.user}</d>
           <d id="date">{blog.date}</d>
@@ -27,7 +27,7 @@ function Blog(blog) {
       </div>
 
       <div className="body">
-        <img src={pic} className="image" />
+        <img src={pic} alt="blog-pic" className="image" />
 
         <div className="content">
           <h1>{blog.heading}</h1>

@@ -13,7 +13,7 @@
 }
 
 @keyframes create-blog-box {
-  0% {margin-left: -100px; opacity: 0%;}
+  0% {opacity: 0%; transform: translateX(-100px);}
 }
 
 .lines {
@@ -37,8 +37,13 @@
 }
 
 #line-3 {
+  text-decoration: none;
+}
+
+#line-3-btn {
   font-family: Poppins, sans-serif;
   background-color: #ffae00;
+  color: #000000;
   border-radius: 17px;
   line-height: 30px;
   font-size: 20px;
@@ -52,13 +57,13 @@
   margin-top: 20px;
 }
 
-#link {
-  text-decoration: none;
-  color: #000000;
+#line-3-btn:hover {
+  color: seashell;
+  transition: 0.5s;
 }
 
-#line-3:hover {
-  color: seashell;
+#line-3-btn:active {
+  transform: translateY(4px);
   transition: 0.5s;
 }
 

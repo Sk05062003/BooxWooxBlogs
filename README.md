@@ -3,6 +3,9 @@
 ## Issues
 
 ## Updates
+- 12 August, 2021
+    - Code refined
+
 - 10 August, 2021
     - Home page enhanced
     - Footer added

@@ -16,6 +16,7 @@ function Navbar() {
   };
 
   window.addEventListener("resize", checkSideMenuSize);
+  window.addEventListener("scroll", closeSideMenu)
 
   return (
     <div className="nav-container">

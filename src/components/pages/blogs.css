@@ -27,16 +27,23 @@
   cursor: pointer;
   animation-name: blog-box;
   animation-duration: 3s;
+  position:relative;
+}
+
+.blog-box:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+    transition-timing-function: ease-in;
 }
 
 @keyframes blog-box {
-    0% {opacity: 0%; margin-top: 100px;}
+    0% {opacity: 0%; transform: translateY(100px);}
     100% {opacity: 100%;}
 }
 
 .icon {
-  height: 51.43px;
-  width: 30px;
+  height: 100%;
+  width: auto;
   top: 0px;
   z-index: 11;
 }
@@ -90,7 +97,7 @@
 
 #likes-icon {
   color: #ff0000;
-  margin-left: 50px;
+  margin-left: 6%;
   font-size: 30px;
   position: relative;
   cursor: pointer;
@@ -122,7 +129,7 @@
   display: flex;
   flex-direction: column;
   margin: 20px;
-  width: 550px;
+  width: 60%;
   top: 0;
 }
 
@@ -182,6 +189,12 @@
   height: auto;
   width: auto;
   border-radius: 8px;
+}
+
+.image:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    transition-timing-function: ease-out;
 }
 
 .footing {
@@ -300,8 +313,8 @@
 
 #bmi {
   position: absolute;
-  margin-left: 57%;
-  z-index: 13;
+  margin-left:92%;
+  z-index: 9;
 }
 
 #drop-down {
@@ -328,7 +341,7 @@
 #side-menu {
   position: absolute;
   z-index: 1;
-  margin-left: 3%;
+  margin-left: 5%;
   margin-top: 70px;
   font-family: Poppins;
   font-style: normal;
@@ -350,6 +363,11 @@
 #side-menu li:hover {
   color: #ffbd06;
   transition: 0.5s;
+}
+
+#category-head {
+    margin-bottom: 6px;
+    font-weight: bolder;
 }
 
 #link {
@@ -418,12 +436,12 @@
 }
 
 #access-bar {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 20;
   display: none;
   background-color: #ffbd06;
   width: 100%;
-  z-index: 30;
+  z-index: 10;
   white-space: nowrap;
 }
 
@@ -446,7 +464,7 @@
 
 .access-items {
   position: absolute;
-  z-index: 100;
+  z-index: 9;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -467,6 +485,12 @@
   border-radius: 10px;
   border: 3px solid #000000;
   background-color: #ffffff;
+  animation-name: access-items;
+  animation-duration: 0.8s;
+}
+
+@keyframes access-items {
+    0% {opacity: 0%;}
 }
 
 .access-items-inactive {
@@ -476,6 +500,7 @@
 #access-item {
   cursor: pointer;
   text-justify: center;
+  font-family: Roboto;
   line-height: 30px;
   text-decoration: none;
   color: #000000;
@@ -549,10 +574,15 @@
     position: relative;
     width: 28px;
     height: 35px;
-    left: 370%;
+  }
+  #bmi {
+      margin-left: 88%;
   }
   .footing a {
     margin: 0;
+  }
+  #core {
+      margin-top: 100px;
   }
 }
 
@@ -560,6 +590,9 @@
   .icon {
     left: 300%;
     height: 38px;
+  }
+  #bmi {
+    margin-left: 60%;
   }
   #likes {
     font-size: 12px;
