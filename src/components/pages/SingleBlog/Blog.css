@@ -1,0 +1,133 @@
+.heart{
+    color: red;
+    cursor: pointer;
+    width: fit-content;
+    position: relative;
+}
+#comment{
+    font-size: 2em;
+}
+#authorInfo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 580px;
+    margin-top: 47px;
+}
+#authorpicture{
+    width: 90px;
+    height: 90px;
+
+    border: 2px solid #000000;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+#authorpic{
+    border-radius: 50%;
+}
+#authorname{
+    margin-left: 39px;
+    margin-top: 6px;
+
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
+
+    color: #000000;
+}
+#authortitle{
+    margin-top: 12px;
+    margin-left: 39px;
+
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+color: #828282;
+
+}
+
+#contentBody{
+    display: flex;
+    flex-direction: row;
+}
+
+#blogshare{
+    display: flex;
+    flex-direction: column;
+    margin-left:38px;
+    margin-top:110px;
+}
+#authortxt{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.line1{
+    margin-top: 4.5px;
+    border: #000000 1px;
+    width: 75px;
+    height: 1px;
+    background: #000000;
+}
+
+#authornamea{
+    margin-top: 13.5px;
+
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 28px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+#authortitlebox{
+    position: relative;
+    top: 4px;
+    width: 129px;
+
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #5A5A5A;
+}
+.line2{
+    margin-top: 12px;
+    border: #000000 1px;
+    width: 75px;
+    height: 1px;
+    background: #000000;
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 13px;
+}
+.share{
+    margin-left: 24.53px;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    margin-top:101px;
+    margin-left: 20px;
+}
+#commentSection{
+    display: flex;
+    flex-direction: column;
+}

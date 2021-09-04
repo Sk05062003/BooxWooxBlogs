@@ -4,14 +4,16 @@ import Navbar from "./components/Global/nav";
 import Footer from './components/Global/Footer'
 import Home from "./components/Home/index";
 import BlogsPage from "./components/pages/blogs";
+import Blog from "./components/pages/SingleBlog/Blog";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/blogs" component={BlogsPage} />
+        <Route exact path="/" exact component={Home} />
+        <Route exact path="/blogs" component={BlogsPage} />
+        <Route exact path="/blogs/blog" component={Blog} />
       </Switch>
       <Footer />
     </Router>

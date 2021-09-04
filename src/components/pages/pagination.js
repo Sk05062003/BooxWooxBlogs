@@ -27,13 +27,14 @@ function Blog(blog) {
       </div>
 
       <div className="body">
+        <div onClick={()=>{window.location=window.location+"/blog"}}>
         <img src={pic} alt="blog-pic" className="image" />
 
         <div className="content">
           <h1>{blog.heading}</h1>
           <p>{blog.content}</p>
         </div>
-
+        </div>
         <div class="footing">
           <a href="#" className="author">
             <i class="fa fa-user"></i> {blog.author}
